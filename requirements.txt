@@ -67,3 +67,5 @@ scikit-image
 h5py
 
 twisted
+
+ffmpeg-python
