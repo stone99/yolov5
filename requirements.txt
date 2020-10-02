@@ -3,7 +3,7 @@
 # base ----------------------------------------
 Cython
 matplotlib>=3.2.2
-numpy>=1.18.5
+#numpy>=1.18.5
 opencv-python>=4.1.2
 pillow
 PyYAML>=5.3
@@ -25,3 +25,45 @@ tqdm>=4.41.0
 # extras --------------------------------------
 # thop  # FLOPS computation
 # seaborn  # plotting
+
+# Serpent only supports Windows through Anaconda. These are the missing packages from the Anaconda Distribution
+
+# Frame Capture
+mss
+
+# Input
+PyAutoGUI
+pyperclip
+win32gui
+
+# Kivy
+Kivy
+
+# OCR
+pytesseract
+
+# Network
+autobahn
+
+# Misc
+editdistance
+
+# Input
+PyAutoGUI
+win32gui
+sneakysnek
+
+# Network
+autobahn
+crossbar
+
+#pip install -upgrade --force-reinstall crossbar
+# Misc
+editdistance
+
+# SciPy
+scikit-learn
+scikit-image
+h5py
+
+twisted

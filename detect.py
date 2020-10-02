@@ -1,3 +1,4 @@
+#!C:\Users\Administrator\.conda\envs\pytorch\python.exe
 import argparse
 import os
 import platform
@@ -163,6 +164,7 @@ if __name__ == '__main__':
     parser.add_argument('--update', action='store_true', help='update all models')
     opt = parser.parse_args()
     print(opt)
+    print("test")
 
     with torch.no_grad():
         if opt.update:  # update all models (to fix SourceChangeWarning)
