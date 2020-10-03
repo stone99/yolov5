@@ -197,10 +197,8 @@ class Game(offshoot.Pluggable):
         print(self.window_geometry)
 
     def play(self, game_agent_class_name="GameAgent", frame_handler=None, **kwargs):
-        if not self.is_launched:
-            raise GameError(f"Game '{self.__class__.__name__}' is not running...")
 
-        self.start_crossbar()
+        #self.start_crossbar()
 
         time.sleep(3)
 
@@ -320,7 +318,6 @@ class Game(offshoot.Pluggable):
     def start_crossbar(self):
         if self.crossbar_process is not None:
             self.stop_crossbar()
-
         crossbar_command = f"python detect.py --source rtmp://localhost:1935/live/test"
 
         self.crossbar_process = subprocess.Popen(shlex.split(crossbar_command))

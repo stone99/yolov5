@@ -14,4 +14,6 @@ class SerpentwowGameAgent(GameAgent):
         pass
 
     def handle_play(self, game_frame):
+        from serpent.input_controller import KeyboardKey
+        self.input_controller.tap_key(KeyboardKey.KEY_RIGHT)
         pass

@@ -11,7 +11,7 @@ analytics:
         - TOTAL_REWARD
 
 crossbar:
-    host: 127.0.0.1
+    host: SC-202005172300
     port: 9999
     realm: serpent
     auth:

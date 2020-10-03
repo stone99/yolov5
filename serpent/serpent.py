@@ -415,7 +415,7 @@ def launch(game_name):
 
 def play(game_name, game_agent_name, frame_handler=None):
     game = initialize_game(game_name)
-    game.launch(dry_run=True)
+    #game.launch(dry_run=True)
 
     game_agent_class_mapping = offshoot.discover("GameAgent", selection=game_agent_name)
     game_agent_class = game_agent_class_mapping.get(game_agent_name)

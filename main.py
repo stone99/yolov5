@@ -57,6 +57,7 @@ class SerpentAI(protocol.ProcessProtocol):
         self.agent = agent
         self.data = ""
         self.lines = 0
+        self.verses = 2
 
     def connectionMade(self):
         print("connectionMade!")
@@ -94,10 +95,10 @@ class SerpentAI(protocol.ProcessProtocol):
         print("quitting")
         reactor.stop()
 if __name__ == "__main__":
-    yolov5 = Yolov5(10)
-    reactor.spawnProcess(yolov5, "detect.py", ["detect.py", "--source", "test.mp4"], {})
+    #yolov5 = Yolov5(10)
+    #reactor.spawnProcess(yolov5, "detect.py", ["detect.py", "--source", "test.mp4"], {})
     serpent = SerpentAI("wow", "SerpentwowGameAgent")
-    reactor.spawnProcess(yolov5, "game.py", ["game.py", "play", "wow", "SerpentwowGameAgent"], {})
+    reactor.spawnProcess(serpent, "game.py", ["game.py", "play", "wow", "SerpentwowGameAgent"], {})
     reactor.run()
 
 

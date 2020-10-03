@@ -38,6 +38,9 @@ win32gui
 
 # Kivy
 Kivy
+kivy.deps.sdl2
+kivy_deps.glew
+
 
 # OCR
 pytesseract
@@ -69,3 +72,5 @@ h5py
 twisted
 
 ffmpeg-python
+
+cefpython3
